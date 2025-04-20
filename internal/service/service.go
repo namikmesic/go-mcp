@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"go/token" // Import token needed by ImplementationFinder
 	"log"
+	"path/filepath"
 
 	"github.com/namikmesic/go-mcp/internal/analyzer"  // Adjusted import path
 	"github.com/namikmesic/go-mcp/internal/datamodel" // Adjusted import path
@@ -53,6 +54,30 @@ func (s *AnalysisService) AnalyzeProject(path string) (*datamodel.ProjectAnalysi
 		return nil, fmt.Errorf("no valid Go packages found or loaded from %s", path)
 	}
 	log.Printf("Successfully loaded %d package(s) for analysis.", len(pkgs))
+
+	// Determine module information - use the first package with a non-nil module
+	var moduleInfo *datamodel.ModuleInfo
+	var moduleDir string
+	var modulePath string
+	for _, pkg := range pkgs {
+		if pkg != nil && pkg.Module != nil {
+			moduleInfo = &datamodel.ModuleInfo{
+				Path:    pkg.Module.Path,
+				Version: pkg.Module.Version,
+				Dir:     pkg.Module.Dir,
+				GoMod:   pkg.Module.GoMod,
+				IsMain:  pkg.Module.Main,
+			}
+			moduleDir = pkg.Module.Dir
+			modulePath = pkg.Module.Path
+			break
+		}
+	}
+	if moduleInfo == nil {
+		log.Println("Warning: No module information found for any package.")
+	} else {
+		log.Printf("Using module: path=%s, dir=%s", modulePath, moduleDir)
+	}
 
 	log.Println("Analyzing interfaces...")
 	// interfacesMap key: packagePath + "." + interfaceName
@@ -110,17 +135,60 @@ func (s *AnalysisService) AnalyzeProject(path string) (*datamodel.ProjectAnalysi
 	// --- Assemble the final result ---
 	log.Println("Assembling final analysis results...")
 	projectAnalysis := &datamodel.ProjectAnalysis{
-		Packages: make([]*datamodel.PackageAnalysis, 0, len(pkgs)),
+		ModulePath: modulePath,
+		ModuleDir:  moduleDir,
+		Packages:   make([]*datamodel.PackageAnalysis, 0, len(pkgs)),
 	}
 
 	// Create a map for quick lookup of interfaces belonging to a package path
 	interfacesByPkgPath := make(map[string][]datamodel.Interface)
 	for _, iface := range interfacesMap {
+		// Make location filenames relative to module directory
+		if moduleDir != "" && filepath.IsAbs(iface.Location.Filename) {
+			relPath, err := filepath.Rel(moduleDir, iface.Location.Filename)
+			if err == nil {
+				iface.Location.Filename = relPath
+			}
+		}
+
+		// Make method location filenames relative
+		for i := range iface.Methods {
+			if moduleDir != "" && filepath.IsAbs(iface.Methods[i].Location.Filename) {
+				relPath, err := filepath.Rel(moduleDir, iface.Methods[i].Location.Filename)
+				if err == nil {
+					iface.Methods[i].Location.Filename = relPath
+				}
+			}
+		}
+
+		// Make implementation location filenames relative
+		for i := range iface.Implementations {
+			if moduleDir != "" && filepath.IsAbs(iface.Implementations[i].Location.Filename) {
+				relPath, err := filepath.Rel(moduleDir, iface.Implementations[i].Location.Filename)
+				if err == nil {
+					iface.Implementations[i].Location.Filename = relPath
+				}
+			}
+		}
+
 		// Ensure the slice exists before appending
 		if _, ok := interfacesByPkgPath[iface.PackagePath]; !ok {
 			interfacesByPkgPath[iface.PackagePath] = []datamodel.Interface{}
 		}
 		interfacesByPkgPath[iface.PackagePath] = append(interfacesByPkgPath[iface.PackagePath], *iface)
+	}
+
+	// Make call site location filenames relative
+	for pkg, calls := range callsByPackage {
+		for i := range calls {
+			if moduleDir != "" && filepath.IsAbs(calls[i].Location.Filename) {
+				relPath, err := filepath.Rel(moduleDir, calls[i].Location.Filename)
+				if err == nil {
+					calls[i].Location.Filename = relPath
+				}
+			}
+		}
+		callsByPackage[pkg] = calls
 	}
 
 	// Populate PackageAnalysis for each loaded package
@@ -131,10 +199,27 @@ func (s *AnalysisService) AnalyzeProject(path string) (*datamodel.ProjectAnalysi
 			continue
 		}
 
+		// Make file paths relative to module directory if possible
+		relativeFiles := make([]string, 0, len(pkg.GoFiles))
+		for _, file := range pkg.GoFiles {
+			// Only make paths relative if we have module information
+			if moduleDir != "" && filepath.IsAbs(file) {
+				relPath, err := filepath.Rel(moduleDir, file)
+				if err == nil {
+					relativeFiles = append(relativeFiles, relPath)
+				} else {
+					// If we can't make it relative, keep the original path
+					relativeFiles = append(relativeFiles, file)
+				}
+			} else {
+				relativeFiles = append(relativeFiles, file)
+			}
+		}
+
 		pkgAnalysis := &datamodel.PackageAnalysis{
 			Name:          pkg.Name,
 			Path:          pkg.PkgPath,
-			Files:         pkg.GoFiles, // Use GoFiles for source files relative to package dir
+			Files:         relativeFiles, // Now using relative file paths
 			Imports:       make([]string, 0, len(pkg.Imports)),
 			EmbedFiles:    pkg.EmbedFiles,                   // Relative to package dir
 			EmbedPatterns: pkg.EmbedPatterns,                // Relative to package dir
@@ -160,16 +245,6 @@ func (s *AnalysisService) AnalyzeProject(path string) (*datamodel.ProjectAnalysi
 		}
 		if pkgAnalysis.Calls == nil {
 			pkgAnalysis.Calls = []datamodel.CallSite{}
-		}
-
-		if pkg.Module != nil {
-			pkgAnalysis.Module = &datamodel.ModuleInfo{
-				Path:    pkg.Module.Path,
-				Version: pkg.Module.Version,
-				Dir:     pkg.Module.Dir,
-				GoMod:   pkg.Module.GoMod,
-				IsMain:  pkg.Module.Main,
-			}
 		}
 
 		// Populate import paths

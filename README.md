@@ -1,6 +1,9 @@
 # Go MCP Analyzer
 
-This project analyzes Go source code to extract structural information, including package details, interface definitions, interface implementations, and call graphs. The goal is to build a representation of the Go codebase suitable for various code analysis and visualization tasks, potentially aligning with concepts from the Model Context Protocol (MCP).
+This project analyzes Go source code to extract structural information, including package details, interface definitions, interface implementations, and call graphs. The goal is to build a representation of the Go codebase suitable for various code analysis and visualization tasks.
+
+The aim is to assess how large‑context LLMs (e.g., Gemini 2.5 Pro) can independently pursue a predefined objective when given, up front, a comprehensive structural overview, interface specifications, implementation mappings, and package relationships.
+
 
 ## How to Run
 
@@ -26,7 +29,24 @@ This project analyzes Go source code to extract structural information, includin
         go run ./cmd/go-mcp/main.go /path/to/your/go/project
         ```
 
-The program will output the analysis results in JSON format to standard output and a summary to standard error.
+The program will output the analysis results in JSON format to standard output and a summary to standard error. Goal is to turn it into an MCP.
+
+## JSON Output Structure
+
+The tool produces an optimized JSON output with the following notable characteristics:
+
+1. **Module information at the top level:**
+   - `ModulePath`: The Go module path
+   - `ModuleDir`: The absolute directory path where the module resides
+
+2. **Relative file paths:** All file paths are relative to the module directory, making the output more portable.
+
+3. **Optimized field inclusion:**
+   - The `Column` field is excluded from all location information
+   - Empty arrays like `EmbedFiles`, `EmbedPatterns`, and `Calls` are omitted when they contain no data
+   - The `UnderlyingType` field used for internal analysis is excluded from the output
+
+This optimized structure reduces redundancy and improves readability of the JSON output.
 
 ## Project Structure
 
@@ -76,12 +96,4 @@ go-mcp/
 
 *   `golang.org/x/tools/go/packages`: For loading Go package information.
 *   `golang.org/x/tools/go/ssa`: For building the SSA representation used in call graph analysis.
-*   `github.com/neo4j/neo4j-go-driver/v5`: (Indirect dependency via `neo4jstore`) For interacting with a Neo4j database.
-
-## Future Work
-
-*   Implement the `StoreAnalysis` method in `neo4jstore/neo4jstore.go` to persist the `ProjectAnalysis` data into a Neo4j database.
-*   Add command-line flags for configuration (e.g., output format, Neo4j connection details).
-*   Expand analysis capabilities (e.g., variable usage, type definitions, dependency analysis).
-*   Add comprehensive unit and integration tests.
 

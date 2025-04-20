@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath" // Import filepath for absolute paths
+	"strings"       // Import strings for suffix operations
 
 	// Adjust import paths according to your project structure and module name
 	"github.com/namikmesic/go-mcp/internal/analyzer/ast"
@@ -44,7 +45,14 @@ func main() {
 		log.Fatalf("Error: Target path must be a directory: %s", targetPath)
 	}
 
-	log.Printf("Starting analysis for directory: %s", targetPath)
+	// Construct the pattern for analysis properly for cross-platform compatibility
+	// Use filepath.Separator for platform-specific path separator
+	recursiveSuffix := string(filepath.Separator) + "..."
+	analysisPattern := targetPath
+	if !strings.HasSuffix(analysisPattern, recursiveSuffix) {
+		analysisPattern = targetPath + recursiveSuffix
+	}
+	log.Printf("Starting analysis for directory using pattern: %s", analysisPattern)
 
 	// --- Dependency Injection ---
 	// Create concrete instances of our components
@@ -62,8 +70,8 @@ func main() {
 	)
 	// --- End Dependency Injection ---
 
-	// Run the analysis using the absolute path
-	projectAnalysis, err := analysisService.AnalyzeProject(targetPath)
+	// Run the analysis using the pattern
+	projectAnalysis, err := analysisService.AnalyzeProject(analysisPattern)
 	if err != nil {
 		log.Fatalf("Analysis failed: %v", err)
 	}
@@ -78,7 +86,6 @@ func main() {
 	}
 
 	// Optional: Print summary after JSON output
-	fmt.Fprintf(os.Stderr, "\n===== ANALYSIS SUMMARY =====\n") // Print summary to Stderr
 	if projectAnalysis != nil {
 		totalPackages := len(projectAnalysis.Packages)
 		fmt.Fprintf(os.Stderr, "Analyzed %d packages.\n", totalPackages)
@@ -101,5 +108,4 @@ func main() {
 	} else {
 		fmt.Fprintln(os.Stderr, "Project analysis result was nil.")
 	}
-	fmt.Fprintln(os.Stderr, "============================")
 }

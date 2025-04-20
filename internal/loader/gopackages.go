@@ -4,6 +4,8 @@ package loader
 import (
 	"fmt"
 	"log"
+	"path/filepath"
+	"strings"
 
 	"golang.org/x/tools/go/packages"
 )
@@ -38,10 +40,28 @@ func NewGoPackagesLoader() *GoPackagesLoader {
 }
 
 func (l *GoPackagesLoader) Load(path string) ([]*packages.Package, error) {
-	cfg := l.Config // Copy base config
-	cfg.Dir = path  // Set the directory for the current load operation
+	// Normalize path by removing trailing separator if present
+	normalizedPath := path
+	if len(normalizedPath) > 0 && normalizedPath[len(normalizedPath)-1] == filepath.Separator {
+		normalizedPath = normalizedPath[:len(normalizedPath)-1]
+	}
 
-	pkgs, err := packages.Load(&cfg, path) // Load using the path as pattern
+	cfg := l.Config          // Copy base config
+	cfg.Dir = normalizedPath // Set the directory for the current load operation
+
+	// For a path ending with "...", strip the "..." suffix for the directory setting
+	// Use platform-specific path handling for better cross-platform compatibility
+	pattern := normalizedPath
+	recursiveSuffix := string(filepath.Separator) + "..."
+
+	if strings.HasSuffix(pattern, recursiveSuffix) {
+		// Remove the /... suffix to get the actual directory
+		cfg.Dir = pattern[:len(pattern)-len(recursiveSuffix)]
+		// Use "." + separator + "..." as the standard recursive pattern
+		pattern = "." + recursiveSuffix
+	}
+
+	pkgs, err := packages.Load(&cfg, pattern) // Load using the adjusted pattern
 	if err != nil {
 		return nil, fmt.Errorf("loading packages from %s: %w", path, err)
 	}

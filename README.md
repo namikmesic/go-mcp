@@ -22,7 +22,7 @@ This project analyzes Go source code to extract structural information, includin
         ```
     *   Analyze all packages within a directory (recursive):
         ```bash
-        # The loader handles the './...' pattern internally when given a directory
+        # The tool automatically appends '/...' when given a directory
         go run ./cmd/go-mcp/main.go /path/to/your/go/project
         ```
 

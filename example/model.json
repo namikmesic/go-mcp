@@ -1,0 +1,3309 @@
+
+{
+  "ModulePath": "github.com/namikmesic/go-mcp",
+  "ModuleDir": "/Users/namik/Desktop/git/src/github.com/namikmesic/go-mcp",
+  "Packages": [
+    {
+      "Name": "datamodel",
+      "Path": "github.com/namikmesic/go-mcp/internal/datamodel",
+      "Files": [
+        "internal/datamodel/datamodel.go"
+      ],
+      "Imports": [
+        "encoding/json",
+        "go/token",
+        "go/types"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "(github.com/namikmesic/go-mcp/internal/datamodel.Interface).MarshalJSON",
+          "CalleeDesc": "encoding/json.Marshal",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/datamodel/datamodel.go",
+            "Line": 76
+          }
+        }
+      ]
+    },
+    {
+      "Name": "utils",
+      "Path": "github.com/namikmesic/go-mcp/internal/analyzer/utils",
+      "Files": [
+        "internal/analyzer/utils/formatters.go"
+      ],
+      "Imports": [
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "go/ast",
+        "go/token",
+        "go/types",
+        "golang.org/x/tools/go/packages",
+        "strings",
+        "fmt"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatMethodSignature",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 18
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString$1",
+          "CalleeDesc": "(*go/types.Package).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 205
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString$1",
+          "CalleeDesc": "(*go/types.Package).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 199
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 23
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 24
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "strings.Join",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 26
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "strings.Join",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 27
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 29
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 30
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Field) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 32
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 32
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 37
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 53
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 54
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 70
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 62
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "strings.Join",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 63
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 63
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFieldList",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 66
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "go/types.TypeString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 207
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 219
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 225
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 237
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 241
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 248
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 251
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Field) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 256
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 270
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatFuncType",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 275
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Field) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 278
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 286
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 308
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 298
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 129
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 133
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 153
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 140
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 137
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 149
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 144
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 145
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.IsPointerType",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 165
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.IsPointerType",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 88
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 92
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 95
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.Parameter, ...github.com/namikmesic/go-mcp/internal/datamodel.Parameter) []github.com/namikmesic/go-mcp/internal/datamodel.Parameter)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 108
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.Parameter, ...github.com/namikmesic/go-mcp/internal/datamodel.Parameter) []github.com/namikmesic/go-mcp/internal/datamodel.Parameter)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/utils/formatters.go",
+            "Line": 99
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ast",
+      "Path": "github.com/namikmesic/go-mcp/internal/analyzer/ast",
+      "Files": [
+        "internal/analyzer/ast/interface_analyzer.go"
+      ],
+      "Imports": [
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "go/ast",
+        "go/types",
+        "golang.org/x/tools/go/packages",
+        "log",
+        "strings",
+        "github.com/namikmesic/go-mcp/internal/analyzer/utils"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Interface method Type on go/types.Object",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 63
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Interface method Underlying on go/types.Type",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 63
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/ast.Ident).Pos",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 68
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 68
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 73
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/ast.CommentGroup).Text",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 80
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "strings.TrimSpace",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 80
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 91
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExprToString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 93
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.Ident) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 101
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 95
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/ast.Field).Pos",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 103
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 103
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 106
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "(*go/ast.CommentGroup).Text",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 112
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "strings.TrimSpace",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 112
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.FormatMethodSignature",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 117
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractParameters",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 118
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/utils.ExtractReturnTypes",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 119
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.Method, ...github.com/namikmesic/go-mcp/internal/datamodel.Method) []github.com/namikmesic/go-mcp/internal/datamodel.Method)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 125
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 122
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces$1",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 136
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 31
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces",
+          "CalleeDesc": "Dynamic via len (func([]*go/ast.File) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 30
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ast.ASTInterfaceAnalyzer).AnalyzeInterfaces",
+          "CalleeDesc": "go/ast.Inspect",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ast/interface_analyzer.go",
+            "Line": 42
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ssa",
+      "Path": "github.com/namikmesic/go-mcp/internal/analyzer/ssa",
+      "Files": [
+        "internal/analyzer/ssa/call_analyzer.go"
+      ],
+      "Imports": [
+        "fmt",
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "go/token",
+        "go/types",
+        "golang.org/x/tools/go/packages",
+        "golang.org/x/tools/go/ssa",
+        "golang.org/x/tools/go/ssa/ssautil",
+        "log"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "golang.org/x/tools/go/ssa/ssautil.Packages",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 30
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 33
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 35
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Program).Build",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 52
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 36
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 48
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Dynamic via len (func([]golang.org/x/tools/go/packages.Error) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 40
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 41
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 43
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 57
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 65
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "golang.org/x/tools/go/ssa/ssautil.AllFunctions",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 79
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*go/types.Package).Path",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 70
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 70
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).Package",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 87
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).Package",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 82
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).Package",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 82
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).String",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 95
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Pos on golang.org/x/tools/go/ssa.Instruction",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 107
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 107
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*go/token.Position).IsValid",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 108
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 113
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Common on golang.org/x/tools/go/ssa.CallInstruction",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 119
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.CallCommon).IsInvoke",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 132
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.CallCommon).StaticCallee",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 144
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 137
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 137
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "go/types.TypeString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 137
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 137
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 140
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 135
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).String",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 146
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Name on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 150
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 157
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 147
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 154
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "go/types.TypeString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 154
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 154
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.CallCommon).StaticCallee",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 162
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).String",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 164
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Name on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 166
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 173
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 165
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 170
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "go/types.TypeString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 170
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 170
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.CallCommon).StaticCallee",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 177
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 192
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "(*golang.org/x/tools/go/ssa.Function).String",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 179
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Name on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 181
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 188
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 180
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Interface method Type on golang.org/x/tools/go/ssa.Value",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 185
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "go/types.TypeString",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 185
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "fmt.Sprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 185
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 199
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/ssa.SSACallGraphAnalyzer).AnalyzeCalls",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.CallSite, ...github.com/namikmesic/go-mcp/internal/datamodel.CallSite) []github.com/namikmesic/go-mcp/internal/datamodel.CallSite)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/ssa/call_analyzer.go",
+            "Line": 220
+          }
+        }
+      ]
+    },
+    {
+      "Name": "typesystem",
+      "Path": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem",
+      "Files": [
+        "internal/analyzer/typesystem/implementation_finder.go"
+      ],
+      "Imports": [
+        "go/types",
+        "golang.org/x/tools/go/packages",
+        "log",
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "go/ast",
+        "go/token"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 201
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 201
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "go/ast.Inspect",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 163
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Pos",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 190
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 190
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/token.Position).IsValid",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 191
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 192
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 193
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 193
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 195
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 195
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Pos",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 203
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 203
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/token.Position).IsValid",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 204
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 211
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 211
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 205
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 206
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 206
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 208
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 208
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 217
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 217
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 224
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 235
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.Implementation, ...github.com/namikmesic/go-mcp/internal/datamodel.Implementation) []github.com/namikmesic/go-mcp/internal/datamodel.Implementation)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 234
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation$1",
+          "CalleeDesc": "(*go/types.object).Name",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 168
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation$1",
+          "CalleeDesc": "(*go/ast.Ident).Pos",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 172
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation$1",
+          "CalleeDesc": "(*go/token.FileSet).Position",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 172
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation$1",
+          "CalleeDesc": "(*go/token.Position).IsValid",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 173
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation$1",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/datamodel.NewLocation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 174
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 28
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.findPackage",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 40
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Dynamic via len (func(map[*go/types.Interface]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 75
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 75
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Dynamic via len (func(map[*go/types.Interface]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 76
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Dynamic via len (func(map[string]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 76
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 42
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.Package).Scope",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 45
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 47
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.Scope).Lookup",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 50
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 52
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 58
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.object).Type",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 62
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Interface method Underlying on go/types.Type",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 62
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.object).Type",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 65
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Interface method Underlying on go/types.Type",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 65
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 65
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Dynamic via len (func(map[string]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 77
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "Dynamic via len (func(map[*go/types.Interface]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 77
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 77
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 85
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.Package).Scope",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 88
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 90
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.Scope).Names",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 94
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.Scope).Lookup",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 95
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "(*go/types.object).Type",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 105
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "go/types.NewPointer",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 111
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "go/types.Implements",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 121
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 123
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "go/types.NewPointer",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 128
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "go/types.Implements",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 129
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/analyzer/typesystem.TypeBasedImplementationFinder).FindImplementations",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.addImplementation",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+            "Line": 131
+          }
+        }
+      ]
+    },
+    {
+      "Name": "loader",
+      "Path": "github.com/namikmesic/go-mcp/internal/loader",
+      "Files": [
+        "internal/loader/gopackages.go",
+        "internal/loader/loader.go"
+      ],
+      "Imports": [
+        "strings",
+        "fmt",
+        "golang.org/x/tools/go/packages",
+        "log",
+        "path/filepath"
+      ],
+      "Interfaces": [
+        {
+          "DocComment": "",
+          "Embeds": [],
+          "Implementations": [
+            {
+              "TypeName": "GoPackagesLoader",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/loader",
+              "PackageName": "loader",
+              "IsPointer": true,
+              "Location": {
+                "Filename": "internal/loader/gopackages.go",
+                "Line": 14
+              }
+            },
+            {
+              "TypeName": "Loader",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/loader",
+              "PackageName": "loader",
+              "IsPointer": false,
+              "Location": {
+                "Filename": "internal/loader/loader.go",
+                "Line": 7
+              }
+            }
+          ],
+          "Location": {
+            "Filename": "internal/loader/loader.go",
+            "Line": 7
+          },
+          "Methods": [
+            {
+              "Name": "Load",
+              "Signature": "Load(path string) ([]*packages.Package, error)",
+              "Parameters": [
+                {
+                  "Name": "path",
+                  "Type": "string",
+                  "IsPointer": false
+                }
+              ],
+              "ReturnTypes": [
+                "[]*packages.Package",
+                "error"
+              ],
+              "DocComment": "Load loads packages based on the provided path pattern (e.g., \"./...\").",
+              "Location": {
+                "Filename": "internal/loader/loader.go",
+                "Line": 9
+              }
+            }
+          ],
+          "Name": "Loader",
+          "PackageName": "loader",
+          "PackagePath": "github.com/namikmesic/go-mcp/internal/loader"
+        }
+      ],
+      "Calls": [
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func(string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 45
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func(string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 46
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "strings.HasSuffix",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 57
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func(string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 45
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func(string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func(string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "golang.org/x/tools/go/packages.Load",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 64
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 66
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "golang.org/x/tools/go/packages.PrintErrors",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 71
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 72
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 85
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via append (func([]*golang.org/x/tools/go/packages.Package, ...*golang.org/x/tools/go/packages.Package) []*golang.org/x/tools/go/packages.Package)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 79
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 81
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func([]golang.org/x/tools/go/packages.Error) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 78
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 86
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/loader.GoPackagesLoader).Load",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/loader/gopackages.go",
+            "Line": 85
+          }
+        }
+      ]
+    },
+    {
+      "Name": "analyzer",
+      "Path": "github.com/namikmesic/go-mcp/internal/analyzer",
+      "Files": [
+        "internal/analyzer/analyzer.go"
+      ],
+      "Imports": [
+        "golang.org/x/tools/go/packages",
+        "golang.org/x/tools/go/ssa",
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "go/token"
+      ],
+      "Interfaces": [
+        {
+          "DocComment": "",
+          "Embeds": [],
+          "Implementations": [
+            {
+              "TypeName": "SSACallGraphAnalyzer",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer/ssa",
+              "PackageName": "ssa",
+              "IsPointer": true,
+              "Location": {
+                "Filename": "internal/analyzer/ssa/call_analyzer.go",
+                "Line": 18
+              }
+            },
+            {
+              "TypeName": "CallGraphAnalyzer",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer",
+              "PackageName": "analyzer",
+              "IsPointer": false,
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 33
+              }
+            }
+          ],
+          "Location": {
+            "Filename": "internal/analyzer/analyzer.go",
+            "Line": 33
+          },
+          "Methods": [
+            {
+              "Name": "AnalyzeCalls",
+              "Signature": "AnalyzeCalls(pkgs []*packages.Package) (map[*packages.Package][]datamodel.CallSite, *ssa.Program, *token.FileSet, error)",
+              "Parameters": [
+                {
+                  "Name": "pkgs",
+                  "Type": "[]*packages.Package",
+                  "IsPointer": false
+                }
+              ],
+              "ReturnTypes": [
+                "map[*packages.Package][]datamodel.CallSite",
+                "*ssa.Program",
+                "*token.FileSet",
+                "error"
+              ],
+              "DocComment": "AnalyzeCalls builds the SSA representation and extracts call sites.\nIt returns a map linking original packages to their call sites, the built SSA program,\nand the FileSet used by SSA (crucial for consistent positioning).",
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 37
+              }
+            }
+          ],
+          "Name": "CallGraphAnalyzer",
+          "PackageName": "analyzer",
+          "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer"
+        },
+        {
+          "DocComment": "",
+          "Embeds": [],
+          "Implementations": [
+            {
+              "TypeName": "ASTInterfaceAnalyzer",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer/ast",
+              "PackageName": "ast",
+              "IsPointer": true,
+              "Location": {
+                "Filename": "internal/analyzer/ast/interface_analyzer.go",
+                "Line": 19
+              }
+            },
+            {
+              "TypeName": "InterfaceAnalyzer",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer",
+              "PackageName": "analyzer",
+              "IsPointer": false,
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 14
+              }
+            }
+          ],
+          "Location": {
+            "Filename": "internal/analyzer/analyzer.go",
+            "Line": 14
+          },
+          "Methods": [
+            {
+              "Name": "AnalyzeInterfaces",
+              "Signature": "AnalyzeInterfaces(pkgs []*packages.Package) (map[string]*datamodel.Interface, error)",
+              "Parameters": [
+                {
+                  "Name": "pkgs",
+                  "Type": "[]*packages.Package",
+                  "IsPointer": false
+                }
+              ],
+              "ReturnTypes": [
+                "map[string]*datamodel.Interface",
+                "error"
+              ],
+              "DocComment": "AnalyzeInterfaces analyzes packages and returns a map where the key is a unique identifier\n(e.g., packagePath + \".\" + interfaceName) and the value is the Interface details.",
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 17
+              }
+            }
+          ],
+          "Name": "InterfaceAnalyzer",
+          "PackageName": "analyzer",
+          "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer"
+        },
+        {
+          "DocComment": "",
+          "Embeds": [],
+          "Implementations": [
+            {
+              "TypeName": "TypeBasedImplementationFinder",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem",
+              "PackageName": "typesystem",
+              "IsPointer": true,
+              "Location": {
+                "Filename": "internal/analyzer/typesystem/implementation_finder.go",
+                "Line": 16
+              }
+            },
+            {
+              "TypeName": "ImplementationFinder",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer",
+              "PackageName": "analyzer",
+              "IsPointer": false,
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 22
+              }
+            }
+          ],
+          "Location": {
+            "Filename": "internal/analyzer/analyzer.go",
+            "Line": 22
+          },
+          "Methods": [
+            {
+              "Name": "FindImplementations",
+              "Signature": "FindImplementations(pkgs []*packages.Package, interfaces map[string]*datamodel.Interface, fset *token.FileSet) error",
+              "Parameters": [
+                {
+                  "Name": "pkgs",
+                  "Type": "[]*packages.Package",
+                  "IsPointer": false
+                },
+                {
+                  "Name": "interfaces",
+                  "Type": "map[string]*datamodel.Interface",
+                  "IsPointer": false
+                },
+                {
+                  "Name": "fset",
+                  "Type": "token.FileSet",
+                  "IsPointer": true
+                }
+              ],
+              "ReturnTypes": [
+                "error"
+              ],
+              "DocComment": "FindImplementations searches through the packages to find types that implement the interfaces\nprovided in the 'interfaces' map. It modifies the Implementations field within the map's values.",
+              "Location": {
+                "Filename": "internal/analyzer/analyzer.go",
+                "Line": 25
+              }
+            }
+          ],
+          "Name": "ImplementationFinder",
+          "PackageName": "analyzer",
+          "PackagePath": "github.com/namikmesic/go-mcp/internal/analyzer"
+        }
+      ]
+    },
+    {
+      "Name": "service",
+      "Path": "github.com/namikmesic/go-mcp/internal/service",
+      "Files": [
+        "internal/service/service.go"
+      ],
+      "Imports": [
+        "golang.org/x/tools/go/packages",
+        "log",
+        "path/filepath",
+        "fmt",
+        "github.com/namikmesic/go-mcp/internal/analyzer",
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "github.com/namikmesic/go-mcp/internal/loader",
+        "go/token"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 46
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Interface method Load on github.com/namikmesic/go-mcp/internal/loader.Loader",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 47
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 49
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 51
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 54
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 56
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 56
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 77
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 82
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Interface method AnalyzeInterfaces on github.com/namikmesic/go-mcp/internal/analyzer.InterfaceAnalyzer",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 84
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 79
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 87
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 93
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Interface method AnalyzeCalls on github.com/namikmesic/go-mcp/internal/analyzer.CallGraphAnalyzer",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 98
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func(map[string]*github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 90
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 90
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 101
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 102
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]github.com/namikmesic/go-mcp/internal/datamodel.CallSite) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 106
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func(map[*golang.org/x/tools/go/packages.Package][]github.com/namikmesic/go-mcp/internal/datamodel.CallSite) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 108
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 108
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 111
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 112
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 115
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Interface method FindImplementations on github.com/namikmesic/go-mcp/internal/analyzer.ImplementationFinder",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 117
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 120
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 136
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 140
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]github.com/namikmesic/go-mcp/internal/datamodel.Implementation) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 130
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 132
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.Rel",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 148
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.IsAbs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 147
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.Rel",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 157
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.IsAbs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 156
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.Rel",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 167
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.IsAbs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 166
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]github.com/namikmesic/go-mcp/internal/datamodel.Interface, ...github.com/namikmesic/go-mcp/internal/datamodel.Interface) []github.com/namikmesic/go-mcp/internal/datamodel.Interface)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 178
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.Rel",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 185
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.IsAbs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 184
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 257
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 257
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 258
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 198
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 203
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via len (func(map[string]*golang.org/x/tools/go/packages.Package) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 223
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.Rel",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 207
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 215
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "path/filepath.IsAbs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 206
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 209
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 212
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]string, ...string) []string)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 252
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CalleeDesc": "Dynamic via append (func([]*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis, ...*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis) []*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 255
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/service.NewAnalysisService",
+          "CalleeDesc": "log.Panicln",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/service/service.go",
+            "Line": 34
+          }
+        }
+      ]
+    },
+    {
+      "Name": "main",
+      "Path": "github.com/namikmesic/go-mcp/cmd/go-mcp",
+      "Files": [
+        "cmd/go-mcp/main.go"
+      ],
+      "Imports": [
+        "strings",
+        "github.com/namikmesic/go-mcp/internal/service",
+        "log",
+        "github.com/namikmesic/go-mcp/internal/analyzer/ast",
+        "os",
+        "path/filepath",
+        "fmt",
+        "encoding/json",
+        "github.com/namikmesic/go-mcp/internal/analyzer/ssa",
+        "github.com/namikmesic/go-mcp/internal/loader",
+        "github.com/namikmesic/go-mcp/internal/analyzer/typesystem"
+      ],
+      "Interfaces": [],
+      "Calls": [
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Dynamic via len (func([]string) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 20
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 21
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 22
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 23
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 24
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "os.Exit",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 25
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "path/filepath.Abs",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 31
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 33
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "os.Stat",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 37
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "os.IsNotExist",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 39
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Interface method IsDir on os.FileInfo",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 44
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 40
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 42
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 45
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "strings.HasSuffix",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 52
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 55
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/loader.NewGoPackagesLoader",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/ast.NewASTInterfaceAnalyzer",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 60
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/typesystem.NewTypeBasedImplementationFinder",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 61
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/analyzer/ssa.NewSSACallGraphAnalyzer",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 62
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "github.com/namikmesic/go-mcp/internal/service.NewAnalysisService",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 65
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "(*github.com/namikmesic/go-mcp/internal/service.AnalysisService).AnalyzeProject",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 74
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 76
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 81
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "encoding/json.NewEncoder",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 82
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "(*encoding/json.Encoder).SetIndent",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 83
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "(*encoding/json.Encoder).Encode",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 84
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "log.Fatalf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 85
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Dynamic via len (func([]*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 90
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Fprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 91
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Fprintln",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 109
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Fprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 105
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Fprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 106
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "fmt.Fprintf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 107
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Dynamic via len (func([]github.com/namikmesic/go-mcp/internal/datamodel.Interface) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 99
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Dynamic via len (func([]github.com/namikmesic/go-mcp/internal/datamodel.CallSite) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 100
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/cmd/go-mcp.main",
+          "CalleeDesc": "Dynamic via len (func([]github.com/namikmesic/go-mcp/internal/datamodel.Implementation) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "cmd/go-mcp/main.go",
+            "Line": 102
+          }
+        }
+      ]
+    },
+    {
+      "Name": "neo4jstore",
+      "Path": "github.com/namikmesic/go-mcp/internal/neo4jstore",
+      "Files": [
+        "internal/neo4jstore/neo4jstore.go"
+      ],
+      "Imports": [
+        "github.com/namikmesic/go-mcp/internal/datamodel",
+        "github.com/neo4j/neo4j-go-driver/v5/neo4j",
+        "context",
+        "fmt"
+      ],
+      "Interfaces": [
+        {
+          "DocComment": "",
+          "Embeds": [],
+          "Implementations": [
+            {
+              "TypeName": "GraphStorer",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/neo4jstore",
+              "PackageName": "neo4jstore",
+              "IsPointer": false,
+              "Location": {
+                "Filename": "internal/neo4jstore/neo4jstore.go",
+                "Line": 14
+              }
+            },
+            {
+              "TypeName": "Neo4jStore",
+              "PackagePath": "github.com/namikmesic/go-mcp/internal/neo4jstore",
+              "PackageName": "neo4jstore",
+              "IsPointer": true,
+              "Location": {
+                "Filename": "internal/neo4jstore/neo4jstore.go",
+                "Line": 22
+              }
+            }
+          ],
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 14
+          },
+          "Methods": [
+            {
+              "Name": "StoreAnalysis",
+              "Signature": "StoreAnalysis(ctx context.Context, analysis *datamodel.ProjectAnalysis) error",
+              "Parameters": [
+                {
+                  "Name": "ctx",
+                  "Type": "context.Context",
+                  "IsPointer": false
+                },
+                {
+                  "Name": "analysis",
+                  "Type": "datamodel.ProjectAnalysis",
+                  "IsPointer": true
+                }
+              ],
+              "ReturnTypes": [
+                "error"
+              ],
+              "DocComment": "StoreAnalysis persists the project analysis results.",
+              "Location": {
+                "Filename": "internal/neo4jstore/neo4jstore.go",
+                "Line": 16
+              }
+            },
+            {
+              "Name": "Close",
+              "Signature": "Close(ctx context.Context) error",
+              "Parameters": [
+                {
+                  "Name": "ctx",
+                  "Type": "context.Context",
+                  "IsPointer": false
+                }
+              ],
+              "ReturnTypes": [
+                "error"
+              ],
+              "DocComment": "Close releases any resources held by the storer, like database connections.",
+              "Location": {
+                "Filename": "internal/neo4jstore/neo4jstore.go",
+                "Line": 18
+              }
+            }
+          ],
+          "Name": "GraphStorer",
+          "PackageName": "neo4jstore",
+          "PackagePath": "github.com/namikmesic/go-mcp/internal/neo4jstore"
+        }
+      ],
+      "Calls": [
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "github.com/neo4j/neo4j-go-driver/v5/neo4j.BasicAuth",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 34
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "github.com/neo4j/neo4j-go-driver/v5/neo4j.NewDriverWithContext",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 35
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 37
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "Interface method VerifyConnectivity on github.com/neo4j/neo4j-go-driver/v5/neo4j.DriverWithContext",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 41
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "Interface method Close on github.com/neo4j/neo4j-go-driver/v5/neo4j.DriverWithContext",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 44
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "fmt.Errorf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 45
+          }
+        },
+        {
+          "CallerFuncDesc": "github.com/namikmesic/go-mcp/internal/neo4jstore.NewNeo4jStore",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 48
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/neo4jstore.Neo4jStore).Close",
+          "CalleeDesc": "fmt.Println",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 59
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/neo4jstore.Neo4jStore).Close",
+          "CalleeDesc": "Interface method Close on github.com/neo4j/neo4j-go-driver/v5/neo4j.DriverWithContext",
+          "CallType": "Interface",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 60
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/neo4jstore.Neo4jStore).StoreAnalysis",
+          "CalleeDesc": "Dynamic via len (func([]*github.com/namikmesic/go-mcp/internal/datamodel.PackageAnalysis) int)",
+          "CallType": "Dynamic",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 71
+          }
+        },
+        {
+          "CallerFuncDesc": "(*github.com/namikmesic/go-mcp/internal/neo4jstore.Neo4jStore).StoreAnalysis",
+          "CalleeDesc": "fmt.Printf",
+          "CallType": "Static",
+          "Location": {
+            "Filename": "internal/neo4jstore/neo4jstore.go",
+            "Line": 71
+          }
+        }
+      ]
+    }
+  ]
+}

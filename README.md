@@ -3,18 +3,18 @@
 The main component is the "analyzer" component which extracts structural information, including package details, interface definitions, interface implementations, and call graphs.
 The vision is to build a service that will enable building LLM "accelerators", such as MCP knowledge serves, context synthesizers etc.
 
-Non exhaustive list of potential applications that gMCP can accelerate:
+Non exhaustive list of potential applications that gMCP could potentially enable/accelerate:
 
-- Microservice Architecture Discovery agents - Automatically map out complex microservice ecosystems by analyzing interface implementations and call patterns. Instead of spending weeks understanding a new system, you can visualize the entire architecture in minutes and identify key communication pathways.
-- Technical Debt Detection agents - Identify areas of your codebase with excessive interface usage complexity, implementation overloads, or circular dependencies. By quantifying technical debt with concrete metrics, you can make data-driven decisions about refactoring priorities.
-- Onboarding Acceleration agents - New team members can understand large codebases exponentially faster through visual exploration of interfaces and implementations rather than linearly reading through files. This could reduce onboarding time from months to weeks or even days.
-- API Evolution Planning agents - Track interface changes over time by running regular analyses and storing results. This historical view lets you see how your API surface is evolving, which interfaces are becoming bloated, and where breaking changes might have downstream impacts.
-- Dependency Impact Analysis agents - Before making a change to an interface, instantly see all implementations that would be affected across your entire organization. This prevents those "how did changing this one method break production?" moments.
-- Architectural Conformance Checking agents - Verify that your implementation adheres to your intended design by defining rules about which packages should implement which interfaces. Run automated checks to catch architectural drift before it becomes problematic.
-- Dead Code Elimination agents - Find interfaces with no implementations or implementations never called by any client code. This can substantially reduce your codebase size and maintenance burden by identifying truly unused abstractions.
-- Refactoring Opportunity Detection agents - Automatically identify patterns where interface splitting would be beneficial (interfaces with disparate method clusters) or where composition could replace inheritance chains.
-- Knowledge Graph Construction agents - Build a team knowledge graph by connecting code ownership data with interface analysis to identify who knows which parts of the system best. When you need to make changes, you'll know exactly who to consult.
-- Cross-Language Integration Mapping agents - For polyglot systems, analyze where your Go services connect to services in other languages via common interfaces or API boundaries. This creates a holistic view of your system regardless of implementation language.
+- Microservice Discovery: Quickly map complex microservice architectures and communication paths.
+- Technical Debt Detection: Identify complex interface usage, overloads, and circular dependencies to quantify debt.
+- Faster Onboarding: Accelerate new team member understanding of large codebases via visual exploration.
+- API Evolution Tracking: Monitor interface changes over time to understand evolution and potential breaking changes.
+- Dependency Impact Analysis: See exactly which implementations are affected before changing an interface.
+- Architecture Conformance: Automatically check if code adheres to your intended architectural rules.
+- Dead Code Detection: Find and remove unused interfaces and implementations to reduce bloat.
+- Refactoring Suggestions: Get automated suggestions for improving code structure (e.g., splitting interfaces).
+- Code Knowledge Mapping: Connect code analysis to ownership data to easily find subject matter experts.
+- Polyglot System Mapping: Visualize interactions between services written in different languages.
 
 The transformative power of this MCP server comes from converting implicit, hidden code relationships into explicit, queryable knowledge. Instead of mentally mapping these connections as you read through code (which doesn't scale past a certain codebase size), you can externalize this understanding into a database that your whole team can explore, query, and build upon.
 

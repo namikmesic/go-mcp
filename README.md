@@ -1,4 +1,4 @@
-# gMCP
+# goMCP
 
 The main component is the "analyzer" component which extracts structural information, including package details, interface definitions, interface implementations, and call graphs.
 The vision is to build a service that will enable building LLM "accelerators", such as MCP knowledge serves, context synthesizers etc.

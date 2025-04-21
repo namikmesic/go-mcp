@@ -1,4 +1,4 @@
-# Go-MCP Improvement Tasks
+# Go-MCP Improvement Tasks (Tech Dept)
 
 This document outlines specific tasks for improving the Go Module Call Path Analyzer (go-mcp) project. Each task includes detailed instructions and code examples where appropriate.
 

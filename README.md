@@ -1,11 +1,24 @@
-# Go MCP Analyzer
+# gMCP
 
-This project analyzes Go source code to extract structural information, including package details, interface definitions, interface implementations, and call graphs. The goal is to build a representation of the Go codebase suitable for various code analysis and visualization tasks.
+The main component is the "analyzer" component which extracts structural information, including package details, interface definitions, interface implementations, and call graphs.
+The vision is to build a service that will enable building LLM "accelerators", such as MCP knowledge serves, context synthesizers etc.
 
-The aim is to assess how large‑context LLMs (e.g., Gemini 2.5 Pro) can independently pursue a predefined objective when given, up front, a comprehensive structural overview, interface specifications, implementation mappings, and package relationships.
+Non exhaustive list of potential applications that gMCP can accelerate:
 
+- Microservice Architecture Discovery agents - Automatically map out complex microservice ecosystems by analyzing interface implementations and call patterns. Instead of spending weeks understanding a new system, you can visualize the entire architecture in minutes and identify key communication pathways.
+- Technical Debt Detection agents - Identify areas of your codebase with excessive interface usage complexity, implementation overloads, or circular dependencies. By quantifying technical debt with concrete metrics, you can make data-driven decisions about refactoring priorities.
+- Onboarding Acceleration agents - New team members can understand large codebases exponentially faster through visual exploration of interfaces and implementations rather than linearly reading through files. This could reduce onboarding time from months to weeks or even days.
+- API Evolution Planning agents - Track interface changes over time by running regular analyses and storing results. This historical view lets you see how your API surface is evolving, which interfaces are becoming bloated, and where breaking changes might have downstream impacts.
+- Dependency Impact Analysis agents - Before making a change to an interface, instantly see all implementations that would be affected across your entire organization. This prevents those "how did changing this one method break production?" moments.
+- Architectural Conformance Checking agents - Verify that your implementation adheres to your intended design by defining rules about which packages should implement which interfaces. Run automated checks to catch architectural drift before it becomes problematic.
+- Dead Code Elimination agents - Find interfaces with no implementations or implementations never called by any client code. This can substantially reduce your codebase size and maintenance burden by identifying truly unused abstractions.
+- Refactoring Opportunity Detection agents - Automatically identify patterns where interface splitting would be beneficial (interfaces with disparate method clusters) or where composition could replace inheritance chains.
+- Knowledge Graph Construction agents - Build a team knowledge graph by connecting code ownership data with interface analysis to identify who knows which parts of the system best. When you need to make changes, you'll know exactly who to consult.
+- Cross-Language Integration Mapping agents - For polyglot systems, analyze where your Go services connect to services in other languages via common interfaces or API boundaries. This creates a holistic view of your system regardless of implementation language.
 
-## How to Run
+The transformative power of this MCP server comes from converting implicit, hidden code relationships into explicit, queryable knowledge. Instead of mentally mapping these connections as you read through code (which doesn't scale past a certain codebase size), you can externalize this understanding into a database that your whole team can explore, query, and build upon.
+
+## How to Run (CLI mode with JSON output)
 
 1.  **Prerequisites:** Ensure you have Go installed (version 1.23.7 or later recommended, as per `go.mod`).
 2.  **Clone the repository:** (If you haven't already)
@@ -96,4 +109,3 @@ go-mcp/
 
 *   `golang.org/x/tools/go/packages`: For loading Go package information.
 *   `golang.org/x/tools/go/ssa`: For building the SSA representation used in call graph analysis.
-
